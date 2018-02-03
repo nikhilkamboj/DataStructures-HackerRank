@@ -1,11 +1,11 @@
 package comparator;
 
-public class Player implements Comparable<Player>{
+public class PlayerComparable implements Comparable<PlayerComparable>{
 
     private String nameOfPlayer;
     private int runsScored;
 
-    public Player(String nameOfPlayer, int runsScored) {
+    public PlayerComparable(String nameOfPlayer, int runsScored) {
         this.nameOfPlayer = nameOfPlayer;
         this.runsScored = runsScored;
     }
@@ -20,7 +20,7 @@ public class Player implements Comparable<Player>{
 
 
     @Override
-    public int compareTo(Player p) {
+    public int compareTo(PlayerComparable p) {
 
         if (this.getRunsScored() == p.getRunsScored()) {
             // compare with name

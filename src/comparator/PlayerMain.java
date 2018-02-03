@@ -1,28 +1,26 @@
 package comparator;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 public class PlayerMain {
 
     public static void main(String[] args) {
 
-        ArrayList<Player> playerArrayList = new ArrayList<Player>();
+        ArrayList<PlayerComparable> playerArrayList = new ArrayList<PlayerComparable>();
 
-        playerArrayList.add(new Player("anu", 10));
-        playerArrayList.add(new Player("bnu", 100));
-        playerArrayList.add(new Player("kani", 10));
-        playerArrayList.add(new Player("mani", 11));
-        playerArrayList.add(new Player("ahmed", 13));
-        playerArrayList.add(new Player("ani", 90));
-        playerArrayList.add(new Player("gaani", 100));
-        playerArrayList.add(new Player("raani", 102));
-        playerArrayList.add(new Player("asdjkasa", 1));
-        playerArrayList.add(new Player("paks", 0));
-        playerArrayList.add(new Player("dsfdsk", 19));
-        playerArrayList.add(new Player("sdsd", 20));
+        playerArrayList.add(new PlayerComparable("anu", 10));
+        playerArrayList.add(new PlayerComparable("bnu", 100));
+        playerArrayList.add(new PlayerComparable("kani", 10));
+        playerArrayList.add(new PlayerComparable("mani", 11));
+        playerArrayList.add(new PlayerComparable("ahmed", 13));
+        playerArrayList.add(new PlayerComparable("ani", 90));
+        playerArrayList.add(new PlayerComparable("gaani", 100));
+        playerArrayList.add(new PlayerComparable("raani", 102));
+        playerArrayList.add(new PlayerComparable("asdjkasa", 1));
+        playerArrayList.add(new PlayerComparable("paks", 0));
+        playerArrayList.add(new PlayerComparable("dsfdsk", 19));
+        playerArrayList.add(new PlayerComparable("sdsd", 20));
 
         Collections.sort(playerArrayList);
 
