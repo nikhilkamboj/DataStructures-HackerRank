@@ -46,38 +46,40 @@ public class PlayerComparator {
         return yearsPlayed;
     }
 
-    class sortRunsScored implements Comparator<PlayerComparator>{
+
+    public static Comparator<PlayerComparator> SortRunsScored = new Comparator<PlayerComparator>() {
         @Override
         public int compare(PlayerComparator p1, PlayerComparator p2) {
             return p1.getRunsScored() - p2.getRunsScored();
         }
-    }
+    };
 
-    class sortNameOfPlayer implements Comparator<PlayerComparator>{
+
+    public static Comparator<PlayerComparator> SortNameOfPlayer = new Comparator<PlayerComparator>() {
         @Override
         public int compare(PlayerComparator p1, PlayerComparator p2) {
             return p1.nameOfPlayer.compareTo(p2.getNameOfPlayer());
         }
-    }
+    };
 
-    class sortWicketsTaken implements Comparator<PlayerComparator>{
+    public static Comparator<PlayerComparator> SortWicketsTaken = new Comparator<PlayerComparator>() {
         @Override
         public int compare(PlayerComparator o1, PlayerComparator o2) {
             return o1.wicketsTaken - o2.wicketsTaken;
         }
-    }
+    };
 
-    class sortYearsPlayed implements Comparator<PlayerComparator>{
+    public static Comparator<PlayerComparator> SortYearsPlayed = new Comparator<PlayerComparator>() {
         @Override
         public int compare(PlayerComparator o1, PlayerComparator o2) {
             return o1.yearsPlayed - o2.yearsPlayed;
         }
-    }
+    };
 
 
     @Override
     public String toString() {
-        String showString = "{" + nameOfPlayer + "-" + runsScored + "-" + wicketsTaken + "-" + yearsPlayed;
+        String showString = "{" + nameOfPlayer + "-" + runsScored + "-" + wicketsTaken + "-" + yearsPlayed + "}" + "\n";
         return showString;
     }
 }
