@@ -3,30 +3,34 @@ package linkedlist;
 public class LinkedList {
     Node head;
 
+//    using head as a node where data part is null and next part points to first element of the list
+    public LinkedList() {
+        head = new Node();
+        head.setData(null);
+    }
 
-
-
-    public void insertNode(int data){
+    public void insertNodeAtHead(Integer data){
 //  inserting new node at the head.
         Node newNode = new Node();
         newNode.setData(data);
         newNode.setNext(null);
 
-        if (head == null){
-            head = newNode;
+        if (head.getNext() == null){
+            head.setNext(newNode);
         } else {
-            newNode.setNext(head);
-            head = newNode;
+            newNode.setNext(head.getNext());
+            head.setNext(newNode);
         }
     }
 
 
 
     public boolean haveLoop() {
-        Node fast = head.getNext();
-        Node slow = head;
+//        fast and slow are just references not nodes
+        Node fast = head.getNext().getNext();
+        Node slow = head.getNext();
 
-        if (head == null) {
+        if (head.getNext() == null) {
             return false;
         }
 

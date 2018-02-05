@@ -2,14 +2,14 @@ package linkedlist;
 
 public class Node {
 
-    private int data;
+    private Integer data;
     private Node next;
 
-    public int getData() {
+    public Integer getData() {
         return data;
     }
 
-    public void setData(int data) {
+    public void setData(Integer data) {
         this.data = data;
     }
 
