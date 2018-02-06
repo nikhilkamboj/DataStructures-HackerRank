@@ -15,29 +15,31 @@ public class Anagram {
 
 //    send strings in strict lower or upper case only, otherwise error may arise because of different ascii values od characters.
     public int removeToMakeAnagram(String string1, String string2) {
-        int[] alphaArray1 = new int[ALPHABET_NUMBER];
-        int[] alphaArray2 = new int[ALPHABET_NUMBER];
 
-        for (int i = 0; i < string1.length(); i++) {
+        int[] alphaIndexArray1 = makeAlphabetIndexedArray(string1);
+        int[] alphaIndexArray2 = makeAlphabetIndexedArray(string2);
+
+        return checkArrayDifference(alphaIndexArray1,alphaIndexArray2);
+    }
+
+
+    private int[] makeAlphabetIndexedArray(String string) {
+        int[] alphaArray = new int[ALPHABET_NUMBER];
+
+        for (int i = 0; i < string.length(); i++) {
             int offset = (int) 'a';
-            char charAtPosition = string1.charAt(i);
+            char charAtPosition = string.charAt(i);
             int arrayIndexToBeAdded = charAtPosition - offset;
 
-            alphaArray1[arrayIndexToBeAdded]++;
+            alphaArray[arrayIndexToBeAdded]++;
         }
+        return alphaArray;
+    }
 
-        for (int i = 0; i < string2.length(); i++) {
-            int offset = (int) 'a';
-            char charAtPosition = string2.charAt(i);
-            int arrayIndexToBeAdded = charAtPosition - offset;
-
-            alphaArray2[arrayIndexToBeAdded]++;
-        }
-
+    private int checkArrayDifference (int[] alphaIndexArray1, int[] alphaIndexArray2) {
         int numberOfAlphaToRemove = 0;
-
         for (int i = 0; i < ALPHABET_NUMBER; i++) {
-            numberOfAlphaToRemove += Math.abs(alphaArray1[i] - alphaArray2[i]);
+            numberOfAlphaToRemove += Math.abs(alphaIndexArray1[i] - alphaIndexArray2[i]);
         }
         return numberOfAlphaToRemove;
     }
