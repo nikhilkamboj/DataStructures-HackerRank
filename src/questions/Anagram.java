@@ -22,7 +22,11 @@ public class Anagram {
         return checkArrayDifference(alphaIndexArray1,alphaIndexArray2);
     }
 
-
+    /**
+     *
+     * @param string string which is to be checked for anagram
+     * @return returns int array filled
+     */
     private int[] makeAlphabetIndexedArray(String string) {
         int[] alphaArray = new int[ALPHABET_NUMBER];
 
@@ -45,11 +49,10 @@ public class Anagram {
     }
 
     public static void main(String[] args) {
-        String string1 = "nikhil";
-        String string2 = "nikhil";
+        String string1 = "k";
+        String string2 = "kkk";
 
         Anagram anagram = new Anagram();
         System.out.println(anagram.removeToMakeAnagram(string1,string2));
     }
-
 }
