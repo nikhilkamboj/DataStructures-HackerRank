@@ -18,10 +18,21 @@ public class Fibonacci {
     }
 
 
+    private int findFibonacciValue(int number) {
+        if (number <= 0){
+            return 0;
+        }
+
+        if (number == 1) {
+            return 1;
+        }
+
+        return findFibonacciValue(number-1) + findFibonacciValue(number-2);
+    }
 
     public static void main(String[] args) {
         Fibonacci fibonacci = new Fibonacci();
-        System.out.println(fibonacci.iterativeFibonacci(7));
+        System.out.println(fibonacci.findFibonacciValue(1));
     }
 
 }
