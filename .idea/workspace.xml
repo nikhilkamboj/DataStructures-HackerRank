@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7a02383-3ff4-4124-9147-ff64b56724e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hackerearth/SpecialString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/onlinecoding/SpecialString.java" afterPath="$PROJECT_DIR$/src/onlinecoding/SpecialString.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,10 +15,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="SpecialString.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/hackerearth/SpecialString.java">
+        <entry file="file://$PROJECT_DIR$/src/onlinecoding/SpecialString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="68" column="48" lean-forward="false" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+            <state relative-caret-position="1260">
+              <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -54,6 +53,7 @@
         <option value="$PROJECT_DIR$/src/questions/Anagram.java" />
         <option value="$PROJECT_DIR$/src/questions/Fibonacci.java" />
         <option value="$PROJECT_DIR$/src/hackerearth/SpecialString.java" />
+        <option value="$PROJECT_DIR$/src/onlinecoding/SpecialString.java" />
       </list>
     </option>
   </component>
@@ -193,11 +193,11 @@
     <configuration name="SpecialString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="hackerearth.*" />
+          <option name="PATTERN" value="onlinecoding.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="hackerearth.SpecialString" />
+      <option name="MAIN_CLASS_NAME" value="onlinecoding.SpecialString" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -322,12 +322,12 @@
       <workItem from="1517809633214" duration="1879000" />
       <workItem from="1517900484103" duration="3250000" />
       <workItem from="1518076431756" duration="2763000" />
-      <workItem from="1518337951182" duration="4569000" />
+      <workItem from="1518337951182" duration="6227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17308000" />
+    <option name="totallyTimeSpent" value="18966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="831" extended-state="6" />
@@ -469,10 +469,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hackerearth/SpecialString.java">
+    <entry file="file://$PROJECT_DIR$/src/onlinecoding/SpecialString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="68" column="48" lean-forward="false" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+        <state relative-caret-position="1260">
+          <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
           <folding />
         </state>
       </provider>

@@ -1,10 +1,12 @@
 package onlinecoding;
 
+import java.util.Scanner;
+
 public class SpecialString {
 
     public void countSpecialSubString(String string) {
 
-        char[] charAraay = string.toCharArray();
+        char[] charArray = string.toCharArray();
         int length = string.length();
         boolean isSpecialString;
         int specialSubStringCount = 0;
@@ -12,7 +14,7 @@ public class SpecialString {
         for (int i = 0; i < length; i++) {
             StringBuffer stringBuffer = new StringBuffer();
             for (int j = i; j < length; j++ ) {
-                stringBuffer.append(charAraay[j]);
+                stringBuffer.append(charArray[j]);
                 String tempString = stringBuffer.toString();
                 isSpecialString = isSubStringSpecial(tempString);
                 if (isSpecialString) {
@@ -43,32 +45,44 @@ public class SpecialString {
             String frontString = subString.substring(0,middleValue);
             String rearString = subString.substring(middleValue+1);
 
-            return frontString.equals(rearString);
+            if (frontString.equals(rearString)) {
+                if (isEvenStringEqual(frontString)) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
 
         }
 
         if (subString.length()%2 == 0) {
             // traverse the subString and check if all are equal or not
-            char toCheckChar = charArray[0];
-            for (int i = 0; i < subString.length(); i++) {
-                if (charArray[i] != toCheckChar) {
-                    return false;
-                }
-            }
-            return true;
+            return isEvenStringEqual(subString);
         }
-
-         return false;
-
+        return false;
     }
+
+
+    private boolean isEvenStringEqual(String subString) {
+        char[] charArray = subString.toCharArray();
+        char toCheckChar = charArray[0];
+
+        for (int i = 0; i < subString.length(); i++) {
+            if (charArray[i] != toCheckChar) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 
 
     public static void main(String[] args) {
         SpecialString specialString = new SpecialString();
 
-        specialString.countSpecialSubString("aba");
+        specialString.countSpecialSubString("aabaa");
+        Scanner scanner = new Scanner(System.in);
     }
-
 
 
 }
