@@ -80,7 +80,7 @@ public class SpecialString {
     public static void main(String[] args) {
         SpecialString specialString = new SpecialString();
 
-        specialString.countSpecialSubString("aabaa");
+        specialString.countSpecialSubString("kkokkqokoksaaaa");
         Scanner scanner = new Scanner(System.in);
     }
 

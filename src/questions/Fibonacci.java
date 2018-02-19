@@ -32,7 +32,7 @@ public class Fibonacci {
 
     public static void main(String[] args) {
         Fibonacci fibonacci = new Fibonacci();
-        System.out.println(fibonacci.findFibonacciValue(1));
+        System.out.println(fibonacci.findFibonacciValue(41));
     }
 
 }
